@@ -74,8 +74,7 @@ public class MainActivity extends AppCompatActivity {
         option2.setChecked(false);
         if((counter == Utils.game.length) && (points == 6)){
             Toast.makeText(this,"You made a cookie",Toast.LENGTH_SHORT).show();
-            imageLayout.setVisibility(View.GONE);
-            imageCookie.setVisibility(View.VISIBLE);
+            showFinalImage();
         }
         else if ((counter == Utils.game.length) && (points != 6)){
             Toast.makeText(this,"You cannot make a cookie",Toast.LENGTH_SHORT).show();
@@ -111,5 +110,15 @@ public class MainActivity extends AppCompatActivity {
         fadeIn.setStartOffset(220);
         findViewById(Utils.image[points]).startAnimation(fadeIn);
         findViewById(Utils.image[points]).setAlpha(1.0f);
+    }
+     public void showFinalImage(){
+        final AlphaAnimation fadeOut = new AlphaAnimation(1.0f,0.0f);
+        final AlphaAnimation fadeIn = new AlphaAnimation(0.0f,1.0f);
+        fadeIn.setDuration(800);
+        fadeOut.setDuration(800);
+        imageLayout.startAnimation(fadeOut);
+        imageLayout.setVisibility(View.GONE);
+        imageCookie.startAnimation(fadeIn);
+        imageCookie.setVisibility(View.VISIBLE);
     }
 }
