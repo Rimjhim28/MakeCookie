@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void answerCorrect() {
         showImage();
-        txtAnalysis.setText("You fetched an item");
+        txtAnalysis.setText("You fetched " + Utils.ingredients[points]);
         points++;
         counter++;
         txtPoints.setText(Integer.toString(points));
