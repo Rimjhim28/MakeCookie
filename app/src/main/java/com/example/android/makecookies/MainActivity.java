@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         option2 = (RadioButton) findViewById(R.id.option2);
 
         txtQues.setText(Utils.game[counter][0]);
+        txtAnalysis.setText("Try to fetch ingredents by answering correctly");
         imageLayout = (LinearLayout) findViewById(R.id.image_layout);
         imageCookie = (ImageView) findViewById(R.id.cookie);
     }
