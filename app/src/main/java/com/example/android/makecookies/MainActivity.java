@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void answerCorrect() {
-        (findViewById(Utils.image[points])).setAlpha(1);
+        showImage();
         txtAnalysis.setText("You fetched an item");
         points++;
         counter++;
@@ -103,5 +103,13 @@ public class MainActivity extends AppCompatActivity {
             });
             txtQues.startAnimation(fadeOut);
         }
+    }
+     public void showImage(){
+        final AlphaAnimation fadeIn = new AlphaAnimation(0.2f,1.0f);
+        fadeIn.setDuration(400);
+        fadeIn.setFillAfter(true);
+        fadeIn.setStartOffset(220);
+        findViewById(Utils.image[points]).startAnimation(fadeIn);
+        findViewById(Utils.image[points]).setAlpha(1.0f);
     }
 }
