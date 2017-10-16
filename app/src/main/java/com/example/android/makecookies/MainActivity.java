@@ -73,11 +73,11 @@ public class MainActivity extends AppCompatActivity {
         option1.setChecked(false);
         option2.setChecked(false);
         if((counter == Utils.game.length) && (points == 6)){
-            Toast.makeText(this,"You made a cookie",Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this,"You made a cookie",Toast.LENGTH_SHORT).show();
             showFinalImage();
         }
         else if ((counter == Utils.game.length) && (points != 6)){
-            Toast.makeText(this,"You cannot make a cookie",Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this,"You cannot make a cookie",Toast.LENGTH_SHORT).show();
         }
         else{
             final AlphaAnimation fadeIn = new AlphaAnimation(0.0f, 1.0f);
