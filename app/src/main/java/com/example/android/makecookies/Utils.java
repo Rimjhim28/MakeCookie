@@ -15,5 +15,5 @@ public class Utils {
                                      {"Answer = option 2","2"},
                                      {"Answer = option 1","1"}};
 
-    public static String ingredients[] = {"butter","sugar","egg","flour","chocolate","salt"};
+    public static String ingredients[] = {"butter","sugar","egg","chocolate","flour","salt"};
 }
