@@ -84,8 +84,8 @@ public class MainActivity extends AppCompatActivity {
             final AlphaAnimation fadeIn = new AlphaAnimation(0.0f, 1.0f);
             final AlphaAnimation fadeOut = new AlphaAnimation(1f, 0f);
             fadeOut.setFillAfter(true);
-            fadeIn.setDuration(400);
-            fadeOut.setDuration(400);
+            fadeIn.setDuration(300);
+            fadeOut.setDuration(300);
             fadeIn.setFillAfter(true);
             fadeIn.setStartOffset(200);
             fadeOut.setAnimationListener(new Animation.AnimationListener() {
