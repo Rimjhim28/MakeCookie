@@ -31,6 +31,7 @@
             android:layout_height="wrap_content"
             android:text="option2"
             android:onClick="answerChosen"/>
+        
     </RadioGroup>
 
     <LinearLayout
@@ -70,6 +71,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:layout_margin="16dp">
+        
         <ImageView
             android:id="@+id/image1"
             android:layout_width="0dp"
@@ -79,6 +81,7 @@
             android:scaleType="centerCrop"
             android:src="@drawable/butter"
             android:alpha="0.2"/>
+        
         <ImageView
             android:id="@+id/image2"
             android:layout_width="0dp"
@@ -88,6 +91,7 @@
             android:layout_marginRight="8dp"
             android:src="@drawable/sugar"
             android:alpha="0.2"/>
+        
         <ImageView
             android:id="@+id/image3"
             android:layout_width="0dp"
@@ -96,12 +100,15 @@
             android:layout_height="match_parent"
             android:src="@drawable/egg"
             android:alpha="0.2"/>
+        
     </LinearLayout>
+        
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_margin="16dp"
             android:layout_weight="1">
+            
             <ImageView
                 android:id="@+id/image4"
                 android:layout_width="0dp"
@@ -111,6 +118,7 @@
                 android:scaleType="centerCrop"
                 android:src="@drawable/chocolate"
                 android:alpha="0.2"/>
+            
             <ImageView
                 android:id="@+id/image5"
                 android:layout_width="0dp"
@@ -120,6 +128,7 @@
                 android:layout_marginRight="8dp"
                 android:src="@drawable/flour"
                 android:alpha="0.2"/>
+            
             <ImageView
                 android:id="@+id/image6"
                 android:layout_width="0dp"
@@ -128,8 +137,11 @@
                 android:layout_height="match_parent"
                 android:src="@drawable/salt"
                 android:alpha="0.2"/>
+            
         </LinearLayout>
+        
     </LinearLayout>
+    
    <ImageView
        android:id="@+id/cookie"
        android:layout_width="match_parent"
@@ -137,4 +149,5 @@
        android:src="@drawable/cookie"
        android:scaleType="centerCrop"
        android:visibility="gone"/>
+    
 </LinearLayout>
