@@ -3,8 +3,8 @@ package com.example.android.makecookies;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-Button startButton;
 public class StartActivity extends AppCompatActivity {
+Button startButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
